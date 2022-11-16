@@ -16,9 +16,6 @@ services:
       - 8626:8626
     networks:
       - microserviceNetwork
-    depends_on:
-      eureka-service:
-        condition: service_healthy
 
   image-service:
     image: palla/image-service
@@ -27,9 +24,6 @@ services:
       - 8200:8200
     networks:
       - microserviceNetwork
-    depends_on:
-      eureka-service:
-        condition: service_healthy
 
   gallery-service:
     image: palla/gallery-service
@@ -38,9 +32,6 @@ services:
       - 8100:8100
     networks:
       - microserviceNetwork
-    depends_on:
-      eureka-service:
-        condition: service_healthy
 
 networks:
   microserviceNetwork:
