@@ -3,9 +3,10 @@
 Starting services in this order:
 
 1) Eureka Server
-2) Gateway Service
-3) Image Service
-4) Gallery Service
+2) Image Service
+3) Gallery Service
+4) World Service
+4) Gateway Service
 
 Use this link to test the services:
 
